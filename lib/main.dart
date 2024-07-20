@@ -4,7 +4,18 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Container(
+        body: HomePage(),
+      ),
+    ),
+  );
+}
+
+
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(context) {
+    return Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
@@ -17,14 +28,12 @@ void main() {
             ),
           ),
           child: const Center(
-            child: Text('TESTING TESTING TEST', style: TextStyle(
+            child: Text('Clock Application', style: TextStyle(
               color: Colors.white,
               fontSize: 28,
             ),
             ),
           ),
         ),
-      ),
-    ),
-  );
+  }
 }
